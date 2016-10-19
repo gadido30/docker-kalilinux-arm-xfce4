@@ -5,7 +5,7 @@ USER='root'
 VNCUSER='root'
 case "$1" in
   start)
-    su $VNCUSER -c '/usr/bin/tightvncserver :1 -depth 24 -geometry 1380x900' #1280x800'
+    su $VNCUSER -c '/usr/bin/tightvncserver :1 -depth 24 -geometry 1380x900 -dpi 96' #1280x800'
     echo "Starting TightVNC server for $VNCUSER"
     ;;
   stop)
